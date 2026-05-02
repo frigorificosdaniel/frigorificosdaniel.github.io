@@ -43,7 +43,7 @@ const translations = {
       carrier_text: "Partener autorizat Carrier"
     },
     logistics: {
-      title: "EXCELENȚĂ ÎN LOGISTICĂ FRIGORIFICĂ INTERNAȚIONALĂ",
+      title: "EXCELENȚĂ IN LOGISTICĂ FRIGORIFICĂ INTERNAȚIONALĂ",
       text: "La Frigoríficos Daniel, conectăm Spania și România cu restul Europei printr-o flotă modernă și specializată. Misiunea noastră este să garantăm că produsele dumneavoastră ajung la destinație în condiții optime, menținând lanțul frigorific și respectând cele mai înalte standarde de calitate din sectorul logistic internațional."
     },
     services_page: {
@@ -291,23 +291,59 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     // CAPTCHA is already initialized by updateLanguage(currentLang) called above
+    
     contactForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop native submission to handle it via Fetch
+
       const captchaInput = document.getElementById('captcha-input');
       const userAnswer = parseInt(captchaInput.value);
 
+      // 1. Validate CAPTCHA
       if (userAnswer !== captchaAnswer) {
-        // If CAPTCHA is wrong, prevent submission and show error
-        e.preventDefault();
         alert(translations[currentLang].contact.captcha_error);
         captchaInput.focus();
-        return false;
+        return;
       }
-      
-      // If CAPTCHA is correct, we do NOT call e.preventDefault()
-      // and we do NOT use fetch(), XMLHttpRequest, or AJAX.
-      // This allows the browser to perform a native POST submission,
-      // which ensures Web3Forms handles the hidden redirect correctly.
-      return true;
+
+      // 2. Prepare Data
+      const formData = new FormData(contactForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      // 3. UI Feedback (Disable button)
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = currentLang === 'ro' ? 'Se trimite...' : 'Sending...';
+
+      // 4. Submit via Fetch
+      fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          body: json
+      })
+      .then(async (response) => {
+          if (response.status === 200) {
+              // SUCCESS: Manual redirect to our success page
+              window.location.href = '../success/';
+          } else {
+              // ERROR from Web3Forms
+              const result = await response.json();
+              alert(result.message || "Error!");
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalText;
+          }
+      })
+      .catch(error => {
+          // NETWORK ERROR
+          console.error(error);
+          alert("Network error. Please try again.");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+      });
     });
   }
 });
