@@ -290,13 +290,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // Contact Form Logic
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    initCaptcha();
-    contactForm.addEventListener('submit', (e) => {
-      const userAnswer = parseInt(document.getElementById('captcha-input').value);
+    // CAPTCHA is already initialized by updateLanguage(currentLang) called above
+    contactForm.addEventListener('submit', function(e) {
+      const captchaInput = document.getElementById('captcha-input');
+      const userAnswer = parseInt(captchaInput.value);
+
       if (userAnswer !== captchaAnswer) {
+        // If CAPTCHA is wrong, prevent submission and show error
         e.preventDefault();
         alert(translations[currentLang].contact.captcha_error);
+        captchaInput.focus();
+        return false;
       }
+      
+      // If CAPTCHA is correct, we do NOT call e.preventDefault()
+      // and we do NOT use fetch(), XMLHttpRequest, or AJAX.
+      // This allows the browser to perform a native POST submission,
+      // which ensures Web3Forms handles the hidden redirect correctly.
+      return true;
     });
   }
 });
