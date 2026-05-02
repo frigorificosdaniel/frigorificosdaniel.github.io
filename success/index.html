@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mesaj trimis cu succes - Frigorificos Daniel.">
+    <title>Frigorificos Daniel | Mulțumim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--accent-blue)',
+                        'primary-hover': 'var(--accent-blue-hover)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/images/icon.png">
+</head>
+<body class="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Header/Nav -->
+    <header class="sticky top-0 z-50 w-full bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--border-color)]">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="../" class="flex items-center gap-2">
+                    <img src="../assets/images/icon.png" alt="Frigorificos Daniel" class="h-10 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-[var(--accent-blue)]">FRIGORÍFICOS <span class="text-[var(--text-primary)]">DANIEL</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                    <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                    <a href="../transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                    <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                    <a href="../services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                    <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                    <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 text-sm font-medium">
+                        <button class="lang-btn" data-lang="ro">RO</button>
+                        <span class="text-[var(--border-color)]">|</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-[var(--bg-secondary)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-[var(--bg-secondary)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)] p-4 space-y-4">
+            <nav class="flex flex-col gap-4">
+                <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                <a href="../transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                <a href="../services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-grow flex items-center justify-center py-24">
+        <section class="container mx-auto px-4 text-center">
+            <div class="max-w-2xl mx-auto space-y-8 animate-fade-in">
+                <div class="flex justify-center">
+                    <div class="rounded-full bg-green-500/10 p-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <h1 data-i18n="success.title" class="text-4xl md:text-5xl font-black tracking-tight">Mulțumim!</h1>
+                <p data-i18n="success.message" class="text-xl text-[var(--text-secondary)] leading-relaxed">
+                    Mesajul dumneavoastră a fost trimis cu succes. Vă vom contacta în cel mai scurt timp posibil.
+                </p>
+                
+                <div class="pt-8">
+                    <a href="../" data-i18n="success.return_home" class="btn-primary inline-flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                        Înapoi la Acasă
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[var(--bg-secondary)] py-12 border-t border-[var(--border-color)]">
+        <div class="container mx-auto px-4 text-center text-[var(--text-secondary)]">
+            <p>&copy; 2026 Frigorificos Daniel. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ro" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frigorificos Daniel - Soluții avansate în refrigerare industrială și transport frigorific internațional.">
+    <meta name="keywords" content="refrigerare industrială, transport frigorific, depozitare la rece, logistică, Frigorificos Daniel">
+    <meta name="author" content="Frigorificos Daniel">
+    
+    <title>Frigorificos Daniel | Acasă</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--accent-blue)',
+                        'primary-hover': 'var(--accent-blue-hover)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="./assets/images/icon.png">
+</head>
+<body class="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Header/Nav -->
+    <header class="sticky top-0 z-50 w-full bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--border-color)]">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Logo -->
+                <a href="./" class="flex items-center gap-2">
+                    <img src="./assets/images/icon.png" alt="Frigorificos Daniel" class="h-10 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-[var(--accent-blue)]">FRIGORÍFICOS <span class="text-[var(--text-primary)]">DANIEL</span></span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="./" data-i18n="nav.home" class="nav-link font-bold underline">Acasă</a>
+                    <a href="./routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                    <a href="./transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                    <a href="./logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                    <a href="./services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                    <a href="./gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                    <a href="./contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-4">
+                    <!-- Language Switcher -->
+                    <div class="flex items-center gap-2 text-sm font-medium">
+                        <button class="lang-btn hover:text-[var(--accent-blue)] transition-colors" data-lang="ro">RO</button>
+                        <span class="text-[var(--border-color)]">|</span>
+                        <button class="lang-btn hover:text-[var(--accent-blue)] transition-colors" data-lang="en">EN</button>
+                    </div>
+
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-[var(--bg-secondary)] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-[var(--bg-secondary)] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)] p-4 space-y-4 shadow-xl">
+            <nav class="flex flex-col gap-4">
+                <a href="./" data-i18n="nav.home" class="nav-link">Acasă</a>
+                <a href="./routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                <a href="./transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                <a href="./logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                <a href="./services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                <a href="./gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                <a href="./contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-grow">
+        <section class="container mx-auto px-4 py-12 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Left Column: Content -->
+                <div class="space-y-8 animate-fade-in">
+                    <div class="space-y-4">
+                        <h1 data-i18n="hero.title" class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                            LOGISTICĂ FĂRĂ FRONTIERE
+                        </h1>
+                        <p data-i18n="hero.subtitle" class="text-xl text-[var(--text-secondary)] max-w-lg">
+                            Experți în transport frigorific de înaltă calitate. Conectăm Spania și România prin rute strategice în întreaga Europă.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="./contact/" data-i18n="hero.cta_primary" class="btn-primary">Solicită Ofertă</a>
+                        <a href="./services/" data-i18n="hero.cta_secondary" class="btn-secondary">Serviciile Noastre</a>
+                    </div>
+
+                    <!-- IFS Section -->
+                    <div class="pt-8 border-t border-[var(--border-color)]">
+                        <div class="flex items-center gap-6 mb-4">
+                            <img src="./assets/images/icon.png" alt="Frigorificos Daniel Logo" class="h-16 w-auto">
+                            <div class="flex flex-col">
+                                <div class="flex items-center gap-1">
+                                    <svg viewBox="0 0 100 100" class="h-12 w-auto" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Simplified IFS hexagon clusters based on reference -->
+                                        <path d="M30 20 L50 10 L70 20 L70 40 L50 50 L30 40 Z" fill="#0ea5e9" />
+                                        <path d="M10 50 L30 40 L50 50 L50 70 L30 80 L10 70 Z" fill="#0ea5e9" />
+                                        <path d="M50 50 L70 40 L90 50 L90 70 L70 80 L50 70 Z" fill="#0ea5e9" opacity="0.8" />
+                                    </svg>
+                                    <span class="text-4xl font-black text-slate-800 dark:text-slate-200 tracking-tighter">IFS</span>
+                                </div>
+                                <span class="text-[var(--accent-blue)] text-lg font-bold ml-1">Logistics</span>
+                            </div>
+                        </div>
+                        <p data-i18n="hero.ifs_text" class="text-sm text-[var(--text-secondary)] leading-relaxed italic">
+                            Standardul IFS Logistics evaluează calitatea și siguranța activităților logistice (transport, depozitare, distribuție etc.) și ajută companiile să răspundă cerințelor de transparență și trasabilitate ale clienților.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[var(--accent-blue)] to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative bg-[var(--bg-primary)] rounded-2xl overflow-hidden shadow-2xl border border-[var(--border-color)]">
+                        <picture>
+                            <source srcset="./assets/images/1.avif" type="image/avif">
+                            <!-- Using a placeholder pattern as fallback if webp/jpg version isn't verified yet -->
+                            <img src="./assets/images/1.avif" alt="Frigorificos Daniel Trucks" class="w-full h-auto object-cover transform transition duration-500 group-hover:scale-105">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <footer id="main-footer" class="bg-[var(--bg-secondary)] py-12 border-t border-[var(--border-color)]">
+        <div class="container mx-auto px-4 text-center text-[var(--text-secondary)]">
+            <p>&copy; 2026 Frigorificos Daniel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
+
+

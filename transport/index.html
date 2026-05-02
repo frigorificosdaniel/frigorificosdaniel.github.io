@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ro" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frigorificos Daniel - Servicii de transport frigorific de înaltă calitate.">
+    <title>Frigorificos Daniel | Transport</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--accent-blue)',
+                        'primary-hover': 'var(--accent-blue-hover)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/images/icon.png">
+</head>
+<body class="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Header/Nav -->
+    <header class="sticky top-0 z-50 w-full bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--border-color)]">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="../" class="flex items-center gap-2">
+                    <img src="../assets/images/icon.png" alt="Frigorificos Daniel" class="h-10 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-[var(--accent-blue)]">FRIGORÍFICOS <span class="text-[var(--text-primary)]">DANIEL</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                    <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                    <a href="../transport/" data-i18n="nav.transport" class="nav-link font-bold underline">Transport</a>
+                    <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                    <a href="../services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                    <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                    <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 text-sm font-medium">
+                        <button class="lang-btn" data-lang="ro">RO</button>
+                        <span class="text-[var(--border-color)]">|</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-[var(--bg-secondary)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-[var(--bg-secondary)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)] p-4 space-y-4">
+            <nav class="flex flex-col gap-4">
+                <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                <a href="../transport/" data-i18n="nav.transport" class="nav-link font-bold underline">Transport</a>
+                <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                <a href="../services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-grow">
+        <!-- Main Services -->
+        <section class="container mx-auto px-4 py-16">
+            <h1 data-i18n="transport.title" class="text-4xl font-extrabold mb-12 border-b-2 border-[var(--accent-blue)] pb-4 inline-block">Servicii de Transport</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-[var(--accent-blue)]/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[var(--accent-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 data-i18n="transport.card1_title" class="text-xl font-bold mb-4">Transport Frigorific</h2>
+                    <p data-i18n="transport.card1_text" class="text-[var(--text-secondary)] leading-relaxed">
+                        Specialiști în logistică cu temperatură controlată pentru produse perisabile, garantând prospețimea de la origine până la destinație.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-[var(--accent-blue)]/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[var(--accent-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 data-i18n="transport.card2_title" class="text-xl font-bold mb-4">Rute Internaționale</h2>
+                    <p data-i18n="transport.card2_text" class="text-[var(--text-secondary)] leading-relaxed">
+                        Conectăm Spania și România prin servicii regulate, extinzându-ne rețeaua în Franța, Germania și Italia cu eficiență maximă.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-[var(--accent-blue)]/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[var(--accent-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                    </div>
+                    <h2 data-i18n="transport.card3_title" class="text-xl font-bold mb-4">Gestiune Logistică</h2>
+                    <p data-i18n="transport.card3_text" class="text-[var(--text-secondary)] leading-relaxed">
+                        Suport tehnic și monitorizare profesională pentru a asigura că fiecare încărcătură respectă standardele tehnice și termenele de livrare.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Service -->
+        <section class="bg-slate-900 text-white py-24 overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <picture>
+                                <source srcset="../assets/images/2.avif" type="image/avif">
+                                <img src="../assets/images/2.avif" alt="Specialized Auto Service" class="w-full h-auto transform transition duration-500 group-hover:scale-105">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <h2 data-i18n="transport.service_title" class="text-3xl md:text-4xl font-bold">Service auto specializat</h2>
+                        <p data-i18n="transport.service_text" class="text-slate-300 text-lg leading-relaxed">
+                            Service auto specializat pentru camioane, semiremorci și autoturisme. Efectuăm reparații, mentenanță și verificări tehnice pentru întreaga ta flotă, dar și pentru mașini personale. Suntem autorizați pentru reparații, revizii și întreținere pentru agregate frigorifice instalate pe vehicule rutiere.
+                        </p>
+                        <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 w-fit">
+                            <img src="../assets/images/carrier-logo.svg" alt="Carrier Logo" class="h-10 w-auto">
+                            <span data-i18n="transport.carrier_text" class="text-sm font-medium text-slate-400">Partener autorizat Carrier</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fleet Gallery -->
+        <section class="container mx-auto px-4 py-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-[var(--border-color)] aspect-square">
+                    <picture>
+                        <source srcset="../assets/images/3.1.avif" type="image/avif">
+                        <img src="../assets/images/3.1.avif" alt="Fleet 1" class="w-full h-full object-cover">
+                    </picture>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-[var(--border-color)] aspect-square">
+                    <picture>
+                        <source srcset="../assets/images/3.2.avif" type="image/avif">
+                        <img src="../assets/images/3.2.avif" alt="Fleet 2" class="w-full h-full object-cover">
+                    </picture>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-[var(--border-color)] aspect-square">
+                    <picture>
+                        <source srcset="../assets/images/3.3.avif" type="image/avif">
+                        <img src="../assets/images/3.3.avif" alt="Fleet 3" class="w-full h-full object-cover">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[var(--bg-secondary)] py-12 border-t border-[var(--border-color)]">
+        <div class="container mx-auto px-4 text-center text-[var(--text-secondary)]">
+            <p>&copy; 2026 Frigorificos Daniel. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+</html>
