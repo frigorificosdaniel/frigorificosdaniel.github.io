@@ -31,8 +31,8 @@
         <div class="container mx-auto px-4">
             <div class="flex h-16 items-center justify-between">
                 <a href="../" class="flex items-center gap-2">
-                    <img src="../assets/images/icon.png" alt="Frigorificos Daniel" class="h-14 w-auto">
-                    <span class="text-xl font-bold tracking-tight text-[var(--accent-blue)]">FRIGORIFICOS <span class="text-[var(--text-primary)]">DANIEL</span></span>
+                    <img src="../assets/images/icon.png" alt="Frigorificos Daniel" class="h-10 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-[var(--accent-blue)]">FRIGORÍFICOS <span class="text-[var(--text-primary)]">DANIEL</span></span>
                 </a>
                 <nav class="hidden md:flex items-center gap-8">
                     <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
@@ -91,18 +91,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Item 1 (Certificare FRC) -->
-                    <div class="bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-                        <div>
-                            <h2 data-i18n="services_page.item4_title" class="text-xl font-bold mb-4">Certificare FRC</h2>
-                            <p data-i18n="services_page.item4_text" class="text-[var(--text-secondary)] mb-4">
-                                Oferim servicii de testare și eliberare certificat FRC, valabil timp de 3 ani.
-                            </p>
-                        </div>
-                        <a href="../certificat-FRC/" data-i18n="services_page.item4_link" class="inline-flex items-center text-[var(--accent-blue)] font-semibold hover:underline mt-2">
-                            Detalii certificare FRC aici &rarr;
-                        </a>
-                    </div>
                     <!-- Item 1 -->
                     <div class="bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-sm hover:shadow-md transition-shadow">
                         <h2 data-i18n="services_page.item1_title" class="text-xl font-bold mb-4">Închirieri semiremorci frigorifice</h2>
@@ -127,11 +115,17 @@
                         </p>
                     </div>
 
-
+                    <!-- Item 4 -->
+                    <div class="bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-sm hover:shadow-md transition-shadow">
+                        <h2 data-i18n="services_page.item4_title" class="text-xl font-bold mb-4">Certificare FRC</h2>
+                        <p data-i18n="services_page.item4_text" class="text-[var(--text-secondary)]">
+                            Oferim servicii de testare și eliberare certificat FRC, valabil timp de 3 ani.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Featured Image -->
-                <a href="../certificat-FRC/" class="block rounded-3xl overflow-hidden shadow-2xl border border-[var(--border-color)] relative group cursor-pointer">
+                <div class="rounded-3xl overflow-hidden shadow-2xl border border-[var(--border-color)] relative group">
                     <picture>
                         <source srcset="../assets/images/5.avif" type="image/avif">
                         <img src="../assets/images/5.avif" alt="FRC ATP Certification" class="w-full h-auto transform transition duration-700 group-hover:scale-105">
@@ -142,7 +136,7 @@
                             <p class="text-sm opacity-80">International Certification Standards</p>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
     </main>

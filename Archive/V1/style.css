@@ -1,0 +1,49 @@
+:root {
+  /* Light Mode Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent-blue: #0ea5e9;
+  --accent-blue-hover: #0284c7;
+  --border-color: #e2e8f0;
+  
+  /* Font weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+.dark {
+  /* Dark Mode Colors */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-blue: #0ea5e9;
+  --accent-blue-hover: #38bdf8;
+  --border-color: #334155;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--accent-blue)] text-white px-6 py-3 rounded-lg font-semibold transition-all hover:bg-[var(--accent-blue-hover)] focus:ring-4 focus:ring-sky-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-[var(--bg-secondary)] text-[var(--text-primary)] px-6 py-3 rounded-lg font-semibold transition-all hover:opacity-90 focus:ring-4 focus:ring-slate-300;
+  }
+  
+  .nav-link {
+    @apply text-[var(--text-primary)] hover:text-[var(--accent-blue)] transition-colors font-medium;
+  }
+}

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * main.js - Frigorificos Daniel
  * Core logic for theme switching, language translations, and navigation.
  */
@@ -56,39 +56,7 @@ const translations = {
       item3_title: "Transport Mărfuri",
       item3_text: "Oferim servicii profesionale de transport de mărfuri generale, cu flota proprie care conține peste 30 de semiremorci dotate cu termodiagramă și urmărire GPS prin platforma WebEye.",
       item4_title: "Certificare FRC",
-      item4_text: "Oferim servicii de testare și eliberare certificat FRC, valabil timp de 3 ani.",
-      item4_link: "Detalii certificare FRC aici →"
-    },
-    frc_page: {
-      title: "Prelungire și Reînnoire Certificat FRC / ATP în Bistrița – Frigorificos Daniel",
-      subtitle: "Ai nevoie de prelungire pentru certificatul FRC sau retestare ATP pentru vehiculul tău frigorific? La Frigorificos Daniel SRL din Viișoara, Bistrița-Năsăud, oferim servicii profesionale de testare și eliberare/reînnoire certificat FRC, valabil timp de 3 ani.",
-      what_title: "Ce este certificatul FRC / ATP și de ce ai nevoie de el?",
-      what_desc1: "Certificatul FRC (Frigorific Renforcé Classé) face parte din acordul internațional ATP și atestă că suprastructura frigorifică (duba, semiremorca sau caroseria izotermă) îndeplinește standardele de izolare termică și capacitate de răcire de la +20°C la -20°C.",
-      what_desc2: "Deținerea unui certificat FRC valabil este obligatorie pentru transportul de mărfuri perisabile (congelate, refrigerate, carne, lactate, produse farmaceutice) atât în transportul internațional, cât și pe teritoriul României.",
-      services_title: "Servicii oferite de Frigorificos Daniel SRL",
-      srv1_name: "Testare FRC / ATP:",
-      srv1_desc: "Verificarea tehnică a capacității de izolare și a sistemului de răcire.",
-      srv2_name: "Prelungire Certificat FRC:",
-      srv2_desc: "Reînnoirea certificatului existent pentru o perioadă suplimentară de 3 ani.",
-      srv3_name: "Consultanță tehnică:",
-      srv3_desc: "Verificarea funcționării optime a termodiagramei și instalației frigorifice.",
-      why_title: "De ce să alegi centrul nostru din Viișoara, Bistrița?",
-      why1_name: "Experiență în domeniul frigorific:",
-      why1_desc: "Cunoaștem cerințele stricte din industria transporturilor refrigerate.",
-      why2_name: "Locație accesibilă:",
-      why2_desc: "Ne găsești rapid în Bistrița (Cartier Viișoara, Calea Dejului nr. 1).",
-      why3_name: "Rapiditate și eficiență:",
-      why3_desc: "Reducem timpii de staționare ai flotei tale auto.",
-      faq_title: "Întrebări frecvente despre Reînnoirea FRC (FAQ)",
-      faq1_q: "Cât timp este valabilă prelungirea certificatului FRC?",
-      faq1_a: "Prelungirea obținută în urma retestării tehnice este valabilă timp de 3 ani.",
-      faq2_q: "Când trebuie făcută retestarea FRC?",
-      faq2_a: "Se recomandă programarea retestării înainte de expirarea certificatului inițial (de regulă eliberat pe 6 ani de producător), pentru a evita amenzile la transportul internațional și intern.",
-      cta_title: "Programează-te pentru Testare / Prelungire FRC în Bistrița",
-      cta_desc: "Suntem pregătiți să îți ajutăm flota să rămână conformă normelor ATP. Contactează echipa Frigorificos Daniel SRL:",
-      address_label: "Adresă: Calea Dejului nr. 1, Viișoara, jud. Bistrița-Năsăud",
-      phone_label: "Telefon: ",
-      web_label: "Site web: "
+      item4_text: "Oferim servicii de testare și eliberare certificat FRC, valabil timp de 3 ani."
     },
     contact: {
       title: "Contactați-ne",
@@ -169,39 +137,7 @@ const translations = {
       item3_title: "Goods Transport",
       item3_text: "We offer professional general goods transport services, with our own fleet containing over 30 semi-trailers equipped with thermodiagram and GPS tracking through the WebEye platform.",
       item4_title: "FRC Certification",
-      item4_text: "We offer FRC testing and certificate issuance services, valid for 3 years.",
-      item4_link: "Details for certificate issuance at this link here →"
-    },
-    frc_page: {
-      title: "FRC / ATP Certificate Renewal and Extension in Bistrița – Frigorificos Daniel",
-      subtitle: "Do you need an extension for your FRC certificate or ATP re-testing for your refrigerated vehicle? At Frigorificos Daniel SRL in Viișoara, Bistrița-Năsăud, we offer professional testing and FRC certificate issuance/renewal services, valid for 3 years.",
-      what_title: "What is the FRC / ATP certificate and why do you need it?",
-      what_desc1: "The FRC certificate (Frigorific Renforcé Classé) is part of the international ATP agreement and certifies that the refrigerated body (van, semi-trailer, or insulated container) meets thermal insulation and cooling capacity standards from +20°C down to -20°C.",
-      what_desc2: "Holding a valid FRC certificate is mandatory for transporting perishable goods (frozen, chilled, meat, dairy, pharmaceuticals) both internationally and domestically within Romania.",
-      services_title: "Services Provided by Frigorificos Daniel SRL",
-      srv1_name: "FRC / ATP Testing:",
-      srv1_desc: "Technical verification of insulation efficiency and cooling unit performance.",
-      srv2_name: "FRC Certificate Extension:",
-      srv2_desc: "Renewal of the existing certificate for an additional 3-year period.",
-      srv3_name: "Technical Consultation:",
-      srv3_desc: "Complete operational inspection of the temperature recorder (thermograph) and refrigeration system.",
-      why_title: "Why Choose Our Service Center in Viișoara, Bistrița?",
-      why1_name: "Refrigeration Expertise:",
-      why1_desc: "We understand the strict requirements of the temperature-controlled transport industry.",
-      why2_name: "Accessible Location:",
-      why2_desc: "Easy to reach in Bistrița (Cartier Viișoara, Calea Dejului No. 1).",
-      why3_name: "Fast and Efficient:",
-      why3_desc: "Minimizing downtime for your commercial vehicle fleet.",
-      faq_title: "Frequently Asked Questions About FRC Renewal (FAQ)",
-      faq1_q: "How long is the FRC certificate extension valid?",
-      faq1_a: "The extension granted following successful technical re-testing is valid for 3 years.",
-      faq2_q: "When should FRC re-testing be scheduled?",
-      faq2_a: "Re-testing should be scheduled prior to the expiration of the initial certificate (typically issued for 6 years by the manufacturer) to prevent compliance penalties during domestic and international transit.",
-      cta_title: "Schedule an FRC Testing / Extension in Bistrița",
-      cta_desc: "We are ready to help your fleet remain fully ATP compliant. Contact the Frigorificos Daniel SRL team:",
-      address_label: "Address: Calea Dejului No. 1, Viișoara, Bistrița-Năsăud County",
-      phone_label: "Phone: ",
-      web_label: "Website: "
+      item4_text: "We offer FRC testing and certificate issuance services, valid for 3 years."
     },
     contact: {
       title: "Contact Us",
@@ -411,4 +347,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
