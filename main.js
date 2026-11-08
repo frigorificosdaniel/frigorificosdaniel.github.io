@@ -57,7 +57,45 @@ const translations = {
       item3_text: "Oferim servicii profesionale de transport de mărfuri generale, cu flota proprie care conține peste 30 de semiremorci dotate cu termodiagramă și urmărire GPS prin platforma WebEye.",
       item4_title: "Certificare FRC",
       item4_text: "Oferim servicii de testare și eliberare certificat FRC, valabil timp de 3 ani.",
-      item4_link: "Detalii certificare FRC aici →"
+      item4_link: "Detalii certificare FRC aici →",
+      item5_title: "Service Autorizat Carrier Transicold",
+      item5_text: "Centru autorizat în Bistrița pentru mentenanță, diagnoză computerizată și reparații echipamente frigorifice auto Carrier Transicold. Asigurăm piese originale și intervenții rapide pentru distribuție urbană și transport internațional.",
+      item5_link: "Descoperă gama completă Carrier →"
+    },
+    carrier_page: {
+      title: "Service Autorizat Carrier Transicold – Bistrița",
+      subtitle: "Soluții profesionale de refrigerare auto, mentenanță preventivă și reparații cu piese originale.",
+      menu1: "Sisteme Direct Drive",
+      menu2: "Agregate Camion Diesel",
+      menu3: "Echipamente Semiremorcă",
+      menu4: "Înregistratoare Temperatură",
+      s1_title: "Sisteme Frigorifice cu Acționare Directă (Gama Utilitare)",
+      s1_text: "Soluții de răcire eficiente pentru vehicule comerciale ușoare și vanuri de distribuție. Compresorul este acționat direct de motorul autovehiculului sau de sistemul electric.",
+      s1_m1: "Agregat 100% electric pentru distribuție urbană fără emisii suplimentare.",
+      s1_m2_name: "Seria Viento (200 / 300 / 350)",
+      s1_m2: "Echipamente ultra-ușoare, fiabile și optimizate pentru livrări zilnice.",
+      s1_m3_name: "Seria Xarios (150 / 200 / 300 / 350 / 500 / 600)",
+      s1_m3: "Gamă versatilă cu control electronic precis al temperaturii pentru mărfuri proaspete și congelate.",
+      s2_title: "Agregate Frigorifice Autonome pentru Camioane (Gama Monobloc Diesel)",
+      s2_text: "Echipamente monobloc independente prevăzute cu motor diesel propriu, ideale pentru camioane de tonaj mediu și mare.",
+      s2_m1_name: "Seria Supra (450 / 550 / 750 / 850 / 950)",
+      s2_m1: "Capacitate mare de răcire, timp scurt de atingere a temperaturii setate și opțiuni multi-temperatură pentru compartimente separate.",
+      s3_title: "Echipamente de Mare Capacitate pentru Semiremorci",
+      s3_text: "Agregate de înaltă performanță proiectate pentru transportul internațional de lungă durată și menținerea strictă a lanțului frigorific.",
+      s3_m1_name: "Tehnologia Vector (Vector 1550 / 1850 / 1950)",
+      s3_m1: "Tehnologie electrică hibridă E-Drive pentru eficiență energetică maximă, emisii reduse și control termic de precizie (+/- 0.3°C).",
+      s3_m2_name: "Seria Maxima (1300)",
+      s3_m2: "Soluție mecanică robustă, recunoscută pentru fiabilitate și costuri reduse de întreținere.",
+      s4_title: "Dispozitive de Monitorizare & Înregistrare Temperatură",
+      s4_text: "Echipamente certificate EN 12830 pentru monitorizarea continuă a temperaturii și respectarea normelor de siguranță alimentară.",
+      s4_m1: "Înregistrator compact cu imprimantă termică integrată pentru eliberarea bonurilor la livrare.",
+      s4_m2: "Modul avansat cu senzori multipli și integrare cu sisteme telematică/GPS.",
+      gallery_title: "Galerie Carrier Transicold",
+      alt1: "Atelier service Carrier Transicold - autoutilitară frigorifică",
+      alt2: "Camion frigorific în fața service-ului autorizat Carrier Transicold",
+      alt3: "Service autorizat Carrier Transicold Bistrița",
+      cta_title: "Programează-te la Service Autorizat Carrier Transicold în Bistrița",
+      cta_desc: "Suntem pregătiți să menținem flota ta frigorifică în parametri optimi, cu piese originale și intervenții rapide. Contactează echipa Frigorificos Daniel SRL:"
     },
     frc_page: {
       title: "Prelungire și Reînnoire Certificat FRC / ATP în Bistrița – Frigorificos Daniel",
@@ -170,7 +208,45 @@ const translations = {
       item3_text: "We offer professional general goods transport services, with our own fleet containing over 30 semi-trailers equipped with thermodiagram and GPS tracking through the WebEye platform.",
       item4_title: "FRC Certification",
       item4_text: "We offer FRC testing and certificate issuance services, valid for 3 years.",
-      item4_link: "Details for certificate issuance at this link here →"
+      item4_link: "Details for certificate issuance at this link here →",
+      item5_title: "Authorized Carrier Transicold Service",
+      item5_text: "Authorized center in Bistrița for maintenance, diagnostic testing, and repairs of Carrier Transicold transport refrigeration units. We provide original spare parts and fast service for urban distribution and long-haul transport.",
+      item5_link: "Explore Carrier Range →"
+    },
+    carrier_page: {
+      title: "Authorized Carrier Transicold Service – Bistrița",
+      subtitle: "Professional transport refrigeration solutions, preventive maintenance, and repairs with genuine spare parts.",
+      menu1: "Direct Drive Systems",
+      menu2: "Diesel Truck Units",
+      menu3: "Trailer Equipment",
+      menu4: "Temperature Recorders",
+      s1_title: "Direct Drive Refrigeration Units (Utility Range)",
+      s1_text: "Efficient cooling solutions designed for light commercial vehicles and delivery vans. Compressor driven directly by the vehicle engine or electrical system.",
+      s1_m1: "100% electric unit designed for zero-emission urban distribution.",
+      s1_m2_name: "Viento Series (200 / 300 / 350)",
+      s1_m2: "Ultra-lightweight and reliable equipment tailored for daily deliveries.",
+      s1_m3_name: "Xarios Series (150 / 200 / 300 / 350 / 500 / 600)",
+      s1_m3: "Versatile range featuring precise electronic temperature management for fresh and frozen goods.",
+      s2_title: "Independent Truck Units (Monoblock Diesel Range)",
+      s2_text: "Autonomous monoblock systems equipped with their own diesel engine, built for medium and heavy-duty trucks.",
+      s2_m1_name: "Supra Series (450 / 550 / 750 / 850 / 950)",
+      s2_m1: "High cooling capacity, fast pull-down performance, and multi-temperature options for split compartments.",
+      s3_title: "Heavy-Duty Trailer Refrigeration Units",
+      s3_text: "High-output refrigeration systems built for long-distance international transport and strict cold chain preservation.",
+      s3_m1_name: "Vector Technology (Vector 1550 / 1850 / 1950)",
+      s3_m1: "E-Drive hybrid technology offering maximum energy efficiency, reduced emissions, and precise thermal control (+/- 0.3°C).",
+      s3_m2_name: "Maxima Series (1300)",
+      s3_m2: "Robust mechanical unit known for high reliability and low operational costs.",
+      s4_title: "Temperature Recording & Monitoring Devices",
+      s4_text: "EN 12830 certified devices for continuous thermal tracking and compliance with food safety regulations.",
+      s4_m1: "Compact recorder with integrated thermal printer for immediate receipt printing upon delivery.",
+      s4_m2: "Advanced logger featuring multi-sensor input and telematics/GPS integration support.",
+      gallery_title: "Carrier Transicold Gallery",
+      alt1: "Carrier Transicold service workshop - refrigerated van",
+      alt2: "Refrigerated truck in front of the authorized Carrier Transicold service",
+      alt3: "Authorized Carrier Transicold service in Bistrița",
+      cta_title: "Book Your Authorized Carrier Transicold Service in Bistrița",
+      cta_desc: "We are ready to keep your refrigerated fleet in top condition, with genuine parts and fast service. Contact the Frigorificos Daniel SRL team:"
     },
     frc_page: {
       title: "FRC / ATP Certificate Renewal and Extension in Bistrița – Frigorificos Daniel",
@@ -285,6 +361,11 @@ function updateLanguage(lang) {
     }
   });
   
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+    const t = el.getAttribute('data-i18n-alt').split('.').reduce((o, k) => (o ? o[k] : null), translations[lang]);
+    if (t) el.alt = t;
+  });
+
   // Update lang attribute
   document.documentElement.lang = lang;
   

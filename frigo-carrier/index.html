@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Autorizat Carrier Transicold Bistrița | Frigorificos Daniel</title>
+    <meta name="description" content="Service autorizat Carrier Transicold în Bistrița: mentenanță, diagnoză computerizată și reparații agregate frigorifice auto cu piese originale.">
+    <link rel="canonical" href="https://frigorificosdaniel.com/frigo-carrier/">
+    <meta property="og:title" content="Service Autorizat Carrier Transicold Bistrița | Frigorificos Daniel">
+    <meta property="og:url" content="https://frigorificosdaniel.com/frigo-carrier/">
+    <meta property="og:image" content="https://frigorificosdaniel.com/assets/images/carrier-1.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: 'var(--accent-blue)', 'primary-hover': 'var(--accent-blue-hover)' } } } }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/images/icon.png">
+</head>
+<body class="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+<body class="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Header/Nav -->
+    <header class="sticky top-0 z-50 w-full bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--border-color)]">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="../" class="flex items-center gap-2">
+                    <img src="../assets/images/icon.png" alt="Frigorificos Daniel" class="h-14 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-[var(--accent-blue)]">FRIGORIFICOS <span class="text-[var(--text-primary)]">DANIEL</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                    <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                    <a href="../transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                    <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                    <a href="../services/" data-i18n="nav.services" class="nav-link font-bold underline">Servicii</a>
+                    <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                    <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 text-sm font-medium">
+                        <button class="lang-btn" data-lang="ro">RO</button>
+                        <span class="text-[var(--border-color)]">|</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-[var(--bg-secondary)]" aria-label="Toggle theme">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-[var(--bg-secondary)]" aria-label="Open menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)] p-4 space-y-4">
+            <nav class="flex flex-col gap-4">
+                <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                <a href="../transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                <a href="../services/" data-i18n="nav.services" class="nav-link font-bold underline">Servicii</a>
+                <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sticky in-page submenu -->
+    <div class="sticky top-16 z-40 bg-[var(--bg-primary)]/90 backdrop-blur-md border-b border-[var(--border-color)]">
+        <div class="container mx-auto px-4">
+            <nav class="flex gap-2 overflow-x-auto py-3 text-sm font-semibold whitespace-nowrap md:justify-center">
+                <a href="#direct-drive" data-i18n="carrier_page.menu1" class="px-4 py-2 rounded-full border border-[var(--border-color)] bg-[var(--bg-secondary)] hover:text-[var(--accent-blue)] transition-colors">Sisteme Direct Drive</a>
+                <a href="#camion-diesel" data-i18n="carrier_page.menu2" class="px-4 py-2 rounded-full border border-[var(--border-color)] bg-[var(--bg-secondary)] hover:text-[var(--accent-blue)] transition-colors">Agregate Camion Diesel</a>
+                <a href="#semiremorca" data-i18n="carrier_page.menu3" class="px-4 py-2 rounded-full border border-[var(--border-color)] bg-[var(--bg-secondary)] hover:text-[var(--accent-blue)] transition-colors">Echipamente Semiremorcă</a>
+                <a href="#inregistratoare-temperatura" data-i18n="carrier_page.menu4" class="px-4 py-2 rounded-full border border-[var(--border-color)] bg-[var(--bg-secondary)] hover:text-[var(--accent-blue)] transition-colors">Înregistratoare Temperatură</a>
+            </nav>
+        </div>
+    </div>
+
+    <main id="main-content" class="flex-grow">
+        <section class="container mx-auto px-4 py-12 md:py-16">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <div>
+                    <a href="../services/" class="inline-flex items-center text-sm font-semibold text-[var(--accent-blue)] hover:underline gap-1">
+                        &larr; <span data-i18n="nav.services">Servicii</span>
+                    </a>
+                </div>
+                <div class="space-y-4">
+                    <h1 data-i18n="carrier_page.title" class="text-3xl md:text-5xl font-extrabold leading-tight">Service Autorizat Carrier Transicold – Bistrița</h1>
+                    <p data-i18n="carrier_page.subtitle" class="text-lg text-[var(--text-secondary)] leading-relaxed">Soluții profesionale de refrigerare auto, mentenanță preventivă și reparații cu piese originale.</p>
+                </div>
+
+                <section id="direct-drive" class="scroll-mt-36 bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-sm space-y-4">
+                    <h2 data-i18n="carrier_page.s1_title" class="text-2xl font-bold">Sisteme Frigorifice cu Acționare Directă (Gama Utilitare)</h2>
+                    <p data-i18n="carrier_page.s1_text" class="text-[var(--text-secondary)] leading-relaxed">Soluții de răcire eficiente pentru vehicule comerciale ușoare și vanuri de distribuție. Compresorul este acționat direct de motorul autovehiculului sau de sistemul electric.</p>
+                    <ul class="space-y-3">
+<li class="flex gap-3"><span class="text-[var(--accent-blue)] font-bold">&bull;</span><p class="text-[var(--text-secondary)]"><strong class="text-[var(--text-primary)]">Neos 100:</strong> <span data-i18n="carrier_page.s1_m1">Agregat 100% electric pentru distribuție urbană fără emisii suplimentare.</span></p></li>
+<li class="flex gap-3"><span class="text-[var(--accent-blue)] font-bold">&bull;</span><p class="text-[var(--text-secondary)]"><strong class="text-[var(--text-primary)]"><span data-i18n="carrier_page.s1_m2_name">Seria Viento (200 / 300 / 350)</span>:</strong> <span data-i18n="carrier_page.s1_m2">Echipamente ultra-ușoare, fiabile și optimizate pentru livrări zilnice.</span></p></li>
+<li class="flex gap-3"><span class="text-[var(--accent-blue)] font-bold">&bull;</span><p class="text-[var(--text-secondary)]"><strong class="text-[var(--text-primary)]"><span data-i18n="carrier_page.s1_m3_name">Seria Xarios (150 / 200 / 300 / 350 / 500 / 600)</span>:</strong> <span data-i18n="carrier_page.s1_m3">Gamă versatilă cu control electronic precis al temperaturii pentru mărfuri proaspete și congelate.</span></p></li>
+                    </ul>
+                </section>
+
+                <section id="camion-diesel" class="scroll-mt-36 bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-sm space-y-4">
+                    <h2 data-i18n="carrier_page.s2_title" class="text-2xl font-bold">Agregate Frigorifice Autonome pentru Camioane (Gama Monobloc Diesel)</h2>
+                    <p data-i18n="carrier_page.s2_text" class="text-[var(--text-secondary)] leading-relaxed">Echipamente monobloc independente prevăzute cu motor diesel propriu, ideale pentru camioane de tonaj mediu și mare.</p>
+                    <ul class="space-y-3">
+<li class="flex gap-3"><span class="text-[var(--accent-blue)] font-bold">&bull;</span><p class="text-[var(--text-secondary)]"><strong class="text-[var(--text-primary)]"><span data-i18n="carrier_page.s2_m1_name">Seria Supra (450 / 550 / 750 / 850 / 950)</span>:</strong> <span data-i18n="carrier_page.s2_m1">Capacitate mare de răcire, timp scurt de atingere a temperaturii setate și opțiuni multi-temperatură pentru compartimente separate.</span></p></li>
+                    </ul>
+                </section>
+
+                <section id="semiremorca" class="scroll-mt-36 bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-sm space-y-4">
+                    <h2 data-i18n="carrier_page.s3_title" class="text-2xl font-bold">Echipamente de Mare Capacitate pentru Semiremorci</h2>
+                    <p data-i18n="carrier_page.s3_text" class="text-[var(--text-secondary)] leading-relaxed">Agregate de înaltă performanță proiectate pentru transportul internațional de lungă durată și menținerea strictă a lanțului frigorific.</p>
+                    <ul class="space-y-3">
+<li class="flex gap-3"><span class="text-[var(--accent-blue)] font-bold">&bull;</span><p class="text-[var(--text-secondary)]"><strong class="text-[var(--text-primary)]"><span data-i18n="carrier_page.s3_m1_name">Tehnologia Vector (Vector 1550 / 1850 / 1950)</span>:</strong> <span data-i18n="carrier_page.s3_m1">Tehnologie electrică hibridă E-Drive pentru eficiență energetică maximă, emisii reduse și control termic de precizie (+/- 0.3°C).</span></p></li>
+<li class="flex gap-3"><span class="text-[var(--accent-blue)] font-bold">&bull;</span><p class="text-[var(--text-secondary)]"><strong class="text-[var(--text-primary)]"><span data-i18n="carrier_page.s3_m2_name">Seria Maxima (1300)</span>:</strong> <span data-i18n="carrier_page.s3_m2">Soluție mecanică robustă, recunoscută pentru fiabilitate și costuri reduse de întreținere.</span></p></li>
+                    </ul>
+                </section>
+
+                <section id="inregistratoare-temperatura" class="scroll-mt-36 bg-[var(--bg-secondary)] p-8 rounded-2xl border border-[var(--border-color)] shadow-sm space-y-4">
+                    <h2 data-i18n="carrier_page.s4_title" class="text-2xl font-bold">Dispozitive de Monitorizare & Înregistrare Temperatură</h2>
+                    <p data-i18n="carrier_page.s4_text" class="text-[var(--text-secondary)] leading-relaxed">Echipamente certificate EN 12830 pentru monitorizarea continuă a temperaturii și respectarea normelor de siguranță alimentară.</p>
+                    <ul class="space-y-3">
+<li class="flex gap-3"><span class="text-[var(--accent-blue)] font-bold">&bull;</span><p class="text-[var(--text-secondary)]"><strong class="text-[var(--text-primary)]">DataCold 250:</strong> <span data-i18n="carrier_page.s4_m1">Înregistrator compact cu imprimantă termică integrată pentru eliberarea bonurilor la livrare.</span></p></li>
+<li class="flex gap-3"><span class="text-[var(--accent-blue)] font-bold">&bull;</span><p class="text-[var(--text-secondary)]"><strong class="text-[var(--text-primary)]">DataCold 500:</strong> <span data-i18n="carrier_page.s4_m2">Modul avansat cu senzori multipli și integrare cu sisteme telematică/GPS.</span></p></li>
+                    </ul>
+                </section>
+
+                <div class="space-y-6">
+                    <h2 data-i18n="carrier_page.gallery_title" class="text-2xl font-bold">Galerie Carrier Transicold</h2>
+                    <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                    <div class="break-inside-avoid rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg group">
+                        <img src="../assets/images/carrier-1.jpg" alt="Carrier Transicold 1" data-i18n-alt="carrier_page.alt1" loading="lazy" class="w-full h-auto transform transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="break-inside-avoid rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg group">
+                        <img src="../assets/images/carrier-2.jpg" alt="Carrier Transicold 2" data-i18n-alt="carrier_page.alt2" loading="lazy" class="w-full h-auto transform transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="break-inside-avoid rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg group">
+                        <img src="../assets/images/carrier-3.jpg" alt="Carrier Transicold 3" data-i18n-alt="carrier_page.alt3" loading="lazy" class="w-full h-auto transform transition duration-500 group-hover:scale-105">
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Section: Contact / CTA -->
+                <div class="p-8 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-secondary)] space-y-4">
+                    <h2 data-i18n="carrier_page.cta_title" class="text-2xl font-bold">
+                        Programează-te la Service Autorizat Carrier Transicold în Bistrița
+                    </h2>
+                    <p data-i18n="carrier_page.cta_desc" class="text-[var(--text-secondary)] leading-relaxed">
+                        Suntem pregătiți să menținem flota ta frigorifică în parametri optimi, cu piese originale și intervenții rapide. Contactează echipa Frigorificos Daniel SRL:
+                    </p>
+                    <div class="pt-2 space-y-2 text-[var(--text-primary)] font-medium">
+                        <p>📍 <span data-i18n="frc_page.address_label">Adresă: Calea Dejului nr. 1, Viișoara, jud. Bistrița-Năsăud</span></p>
+                        <p>📞 <span data-i18n="frc_page.phone_label">Telefon: </span><a href="https://wa.me/40740559553" target="_blank" rel="noopener noreferrer" class="text-[var(--accent-blue)] hover:underline font-semibold">+40 740 559 553</a></p>
+                        <p>🌐 <span data-i18n="frc_page.web_label">Site web: </span><a href="../" class="text-[var(--accent-blue)] hover:underline font-semibold">frigorificosdaniel.com</a></p>
+                    </div>
+                    <div class="pt-4">
+                        <a href="tel:+40740559553" class="inline-block px-6 py-3 bg-[var(--accent-blue)] text-white font-semibold rounded-xl hover:opacity-90 transition-opacity">
+                            Sună acum / Call Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[var(--bg-secondary)] py-12 border-t border-[var(--border-color)]">
+        <div class="container mx-auto px-4 text-center text-[var(--text-secondary)]">
+            <p>&copy; 2026 Frigorificos Daniel SRL. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+</html>
