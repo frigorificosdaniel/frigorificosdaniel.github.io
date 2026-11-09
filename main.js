@@ -329,15 +329,20 @@ const translations = {
 };
 
 /**
- * Homepage promo carousel: cross-fade every 3s, pause on hover
+ * Homepage promo carousel: auto-rotate every 3s, cross-fade + slight slide,
+ * swipe (Pointer Events), hover-pause for real mice only.
  */
 function initPromoCarousel() {
   const root = document.getElementById('promo-carousel');
   if (!root) return;
   const slides = root.querySelectorAll('[data-slide]');
   const dots = root.querySelectorAll('[data-dot]');
+  const INTERVAL = 3000;
+  const SWIPE_THRESHOLD = 40;
   let index = 0;
   let timer = null;
+  let hovering = false;
+  let startX = 0, startY = 0, tracking = false, swiped = false;
 
   function show(i) {
     index = (i + slides.length) % slides.length;
@@ -345,6 +350,9 @@ function initPromoCarousel() {
       const active = n === index;
       s.classList.toggle('opacity-100', active);
       s.classList.toggle('opacity-0', !active);
+      s.classList.toggle('translate-x-0', active);
+      s.classList.toggle('-translate-x-6', !active && n < index);
+      s.classList.toggle('translate-x-6', !active && n > index);
       s.classList.toggle('pointer-events-none', !active);
       s.setAttribute('aria-hidden', active ? 'false' : 'true');
       s.querySelectorAll('a').forEach(a => { a.tabIndex = active ? 0 : -1; });
@@ -357,14 +365,45 @@ function initPromoCarousel() {
       d.setAttribute('aria-current', n === index ? 'true' : 'false');
     });
   }
-  function start() { stop(); timer = setInterval(() => show(index + 1), 3000); }
   function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  function start() {
+    stop();
+    if (hovering) return;
+    timer = setInterval(() => show(index + 1), INTERVAL);
+  }
 
-  dots.forEach((d, n) => d.addEventListener('click', () => { show(n); }));
-  root.addEventListener('mouseenter', stop);
-  root.addEventListener('mouseleave', start);
-  root.addEventListener('focusin', stop);
-  root.addEventListener('focusout', start);
+  dots.forEach((d, n) => d.addEventListener('click', () => { show(n); start(); }));
+
+  // Hover pause: mouse only (touch emulates mouseenter and never fires mouseleave)
+  root.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') { hovering = true; stop(); } });
+  root.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') { hovering = false; start(); } });
+
+  // Swipe
+  root.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    tracking = true; swiped = false;
+    startX = e.clientX; startY = e.clientY;
+    if (e.pointerType !== 'mouse') stop();
+  });
+  root.addEventListener('pointerup', e => {
+    if (!tracking) return;
+    tracking = false;
+    const dx = e.clientX - startX, dy = e.clientY - startY;
+    if (Math.abs(dx) >= SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)) {
+      swiped = true;
+      show(index + (dx < 0 ? 1 : -1));
+    }
+    if (e.pointerType !== 'mouse') start();
+  });
+  root.addEventListener('pointercancel', () => { tracking = false; start(); });
+  // Don't follow a link when the gesture was a swipe
+  root.addEventListener('click', e => {
+    if (swiped) { e.preventDefault(); e.stopPropagation(); swiped = false; }
+  }, true);
+
+  // Pause when tab is hidden
+  document.addEventListener('visibilitychange', () => { document.hidden ? stop() : start(); });
+
   show(0);
   start();
 }

@@ -158,10 +158,10 @@
     <!-- FRC Certificate Dedicated Callout -->
     <section class="py-12 bg-gradient-to-r from-[var(--bg-secondary)] to-[var(--bg-primary)] border-t border-[var(--border-color)]">
         <div class="container mx-auto px-4">
-            <div id="promo-carousel" class="relative rounded-2xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-lg" aria-roledescription="carousel">
-                <div class="grid">
+            <div id="promo-carousel" class="relative overflow-hidden rounded-2xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-lg select-none" style="touch-action: pan-y; -webkit-tap-highlight-color: transparent;" aria-roledescription="carousel">
+                <div class="grid min-w-0">
                     <!-- Slide 1: FRC -->
-                    <div data-slide class="col-start-1 row-start-1 p-8 pb-12 flex flex-col md:flex-row items-center justify-between gap-6 transition-opacity duration-700 ease-in-out opacity-100">
+                    <div data-slide class="col-start-1 row-start-1 p-8 pb-12 flex flex-col md:flex-row items-center justify-between gap-6 min-w-0 transition-all duration-500 ease-in-out opacity-100 translate-x-0 will-change-transform">
                         <div class="max-w-2xl">
                             <span data-i18n="promo.frc_badge" class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--accent-blue)] bg-[var(--accent-blue)]/10 rounded-full mb-3">Centru Autorizat Viișoara</span>
                             <h3 data-i18n="promo.frc_title" class="text-xl md:text-2xl font-bold text-white mb-2">Testare și Prelungire Certificat FRC / ATP în Bistrița</h3>
@@ -170,7 +170,7 @@
                         <a href="/certificat-FRC/" data-i18n="promo.frc_cta" class="whitespace-nowrap px-6 py-3 rounded-xl bg-[var(--accent-blue)] text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-md">Detalii Prelungire FRC &rarr;</a>
                     </div>
                     <!-- Slide 2: Carrier Transicold -->
-                    <div data-slide class="col-start-1 row-start-1 p-8 pb-12 flex flex-col md:flex-row items-center justify-between gap-6 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" aria-hidden="true">
+                    <div data-slide class="col-start-1 row-start-1 p-8 pb-12 flex flex-col md:flex-row items-center justify-between gap-6 min-w-0 transition-all duration-500 ease-in-out opacity-0 translate-x-6 will-change-transform pointer-events-none" aria-hidden="true">
                         <div class="max-w-2xl">
                             <span data-i18n="promo.carrier_badge" class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--accent-blue)] bg-[var(--accent-blue)]/10 rounded-full mb-3">Service Autorizat Carrier Transicold</span>
                             <h3 data-i18n="promo.carrier_title" class="text-xl md:text-2xl font-bold text-white mb-2">Mentenanță și Reparații Agregate Carrier în Bistrița</h3>
@@ -180,8 +180,8 @@
                     </div>
                 </div>
                 <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
-                    <button type="button" data-dot aria-label="Slide 1" class="h-1.5 w-8 rounded-full bg-[var(--accent-blue)] transition-all duration-300"></button>
-                    <button type="button" data-dot aria-label="Slide 2" class="h-1.5 w-4 rounded-full bg-[var(--border-color)] transition-all duration-300"></button>
+                    <button type="button" data-dot aria-label="Slide 1" class="h-1.5 w-8 p-0 rounded-full bg-[var(--accent-blue)] transition-all duration-300"></button>
+                    <button type="button" data-dot aria-label="Slide 2" class="h-1.5 w-4 p-0 rounded-full bg-[var(--border-color)] transition-all duration-300"></button>
                 </div>
             </div>
         </div>
