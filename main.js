@@ -153,6 +153,16 @@ const translations = {
       title: "Mulțumim!",
       message: "Mesajul dumneavoastră a fost trimis cu succes. Vă vom contacta în cel mai scurt timp posibil.",
       return_home: "Înapoi la Acasă"
+    },
+    promo: {
+      frc_badge: "Centru Autorizat Viișoara",
+      frc_title: "Testare și Prelungire Certificat FRC / ATP în Bistrița",
+      frc_desc: "Efectuăm retestări rapide și reînnoirea certificatului FRC pentru caroserii și semiremorci frigorifice. Eliberare certificat oficial valabil 3 ani.",
+      frc_cta: "Detalii Prelungire FRC →",
+      carrier_badge: "Service Autorizat Carrier Transicold",
+      carrier_title: "Mentenanță și Reparații Agregate Carrier în Bistrița",
+      carrier_desc: "Centru autorizat în Bistrița pentru mentenanță, diagnoză computerizată și reparații echipamente frigorifice auto Carrier Transicold. Asigurăm piese originale și intervenții rapide pentru distribuție urbană și transport internațional.",
+      carrier_cta: "Descoperă gama completă Carrier →"
     }
   },
   en: {
@@ -304,9 +314,61 @@ const translations = {
       title: "Thank you!",
       message: "Your message has been sent successfully. We will get back to you shortly.",
       return_home: "Return to Home"
+    },
+    promo: {
+      frc_badge: "Authorized Center Viișoara",
+      frc_title: "FRC / ATP Certificate Testing and Renewal in Bistrița",
+      frc_desc: "We perform fast re-testing and FRC certificate renewal for refrigerated bodies and semi-trailers. Official certificate issued, valid for 3 years.",
+      frc_cta: "FRC Renewal Details →",
+      carrier_badge: "Authorized Carrier Transicold Service",
+      carrier_title: "Carrier Unit Maintenance and Repairs in Bistrița",
+      carrier_desc: "Authorized center in Bistrița for maintenance, computer diagnostics and repairs of Carrier Transicold vehicle refrigeration units. We provide original parts and fast interventions for urban distribution and international transport.",
+      carrier_cta: "Discover the Full Carrier Range →"
     }
   }
 };
+
+/**
+ * Homepage promo carousel: cross-fade every 3s, pause on hover
+ */
+function initPromoCarousel() {
+  const root = document.getElementById('promo-carousel');
+  if (!root) return;
+  const slides = root.querySelectorAll('[data-slide]');
+  const dots = root.querySelectorAll('[data-dot]');
+  let index = 0;
+  let timer = null;
+
+  function show(i) {
+    index = (i + slides.length) % slides.length;
+    slides.forEach((s, n) => {
+      const active = n === index;
+      s.classList.toggle('opacity-100', active);
+      s.classList.toggle('opacity-0', !active);
+      s.classList.toggle('pointer-events-none', !active);
+      s.setAttribute('aria-hidden', active ? 'false' : 'true');
+      s.querySelectorAll('a').forEach(a => { a.tabIndex = active ? 0 : -1; });
+    });
+    dots.forEach((d, n) => {
+      d.classList.toggle('bg-[var(--accent-blue)]', n === index);
+      d.classList.toggle('w-8', n === index);
+      d.classList.toggle('bg-[var(--border-color)]', n !== index);
+      d.classList.toggle('w-4', n !== index);
+      d.setAttribute('aria-current', n === index ? 'true' : 'false');
+    });
+  }
+  function start() { stop(); timer = setInterval(() => show(index + 1), 3000); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+  dots.forEach((d, n) => d.addEventListener('click', () => { show(n); }));
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', start);
+  root.addEventListener('focusin', stop);
+  root.addEventListener('focusout', start);
+  show(0);
+  start();
+}
+document.addEventListener('DOMContentLoaded', initPromoCarousel);
 
 let currentLang = localStorage.getItem('lang') || 'ro';
 let currentTheme = localStorage.getItem('theme') || 'light';
