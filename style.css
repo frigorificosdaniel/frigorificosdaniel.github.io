@@ -47,3 +47,9 @@
     @apply text-[var(--text-primary)] hover:text-[var(--accent-blue)] transition-colors font-medium;
   }
 }
+
+
+/* Bilingual inline blocks (legal pages, footer) */
+html[lang="en"] .l-ro{display:none !important}
+html:not([lang="en"]) .l-en{display:none !important}
+.legal-links a{text-decoration:underline}

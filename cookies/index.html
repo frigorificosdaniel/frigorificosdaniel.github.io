@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ro" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Politica de cookie-uri și setările de consimțământ - Frigorificos Daniel SRL." />
+    <title>Politica de cookie-uri | Frigorificos Daniel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--accent-blue)',
+                        'primary-hover': 'var(--accent-blue-hover)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/images/icon.png">
+    <meta name="google-site-verification" content="41uS2jlHzJidQans4Os842CnkwK2XTR9i0KvKqMC75k" />
+    <script src="/consent.js" defer></script>
+    <link rel="canonical" href="https://frigorificosdaniel.com/cookies/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frigorificosdaniel.com/cookies/" />
+    <meta property="og:title" content="Politica de cookie-uri | Frigorificos Daniel" />
+    <meta property="og:description" content="Politica de cookie-uri și setările de consimțământ - Frigorificos Daniel SRL." />
+    <meta property="og:image" content="https://frigorificosdaniel.com/assets/images/carrier-1.jpg" />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Politica de cookie-uri | Frigorificos Daniel" />
+    <meta name="twitter:description" content="Politica de cookie-uri și setările de consimțământ - Frigorificos Daniel SRL." />
+    <meta name="twitter:image" content="https://frigorificosdaniel.com/assets/images/carrier-1.jpg" />
+    <meta name="robots" content="index, follow" />
+</head>
+<body class="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Header/Nav -->
+    <header class="sticky top-0 z-50 w-full bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--border-color)]">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="../" class="flex items-center gap-2">
+                    <img src="../assets/images/icon.png" alt="Frigorificos Daniel" class="h-14 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-[var(--accent-blue)]">FRIGORIFICOS <span class="text-[var(--text-primary)]">DANIEL</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                    <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                    <a href="../transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                    <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                    <a href="../services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                    <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                    <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 text-sm font-medium">
+                        <button class="lang-btn" data-lang="ro">RO</button>
+                        <span class="text-[var(--border-color)]">|</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-[var(--bg-secondary)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-[var(--bg-secondary)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)] p-4 space-y-4">
+            <nav class="flex flex-col gap-4">
+                <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                <a href="../transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                <a href="../services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-grow">
+        <article class="container mx-auto px-4 py-16 max-w-3xl space-y-6 leading-relaxed">
+            <div class="l-ro space-y-5">
+                <h1 class="text-3xl md:text-4xl font-extrabold">Politica de cookie-uri</h1>
+                <p class="text-sm text-[var(--text-secondary)]">Ultima actualizare: 9 noiembrie 2026</p>
+                <p>Folosim tehnologii de stocare locală conform Legii nr. 506/2004 și GDPR. Cookie-urile care nu sunt strict necesare sunt activate doar după acordul dumneavoastră. Puteți schimba oricând alegerea din <a href="#" data-cookie-settings class="underline text-[var(--accent-blue)]">Setări cookie</a>.</p>
+                <div class="overflow-x-auto"><table class="w-full text-sm border border-[var(--border-color)]">
+                    <thead class="bg-[var(--bg-secondary)]"><tr><th class="p-3 text-left">Nume</th><th class="p-3 text-left">Furnizor</th><th class="p-3 text-left">Scop</th><th class="p-3 text-left">Durată</th><th class="p-3 text-left">Tip</th></tr></thead>
+                    <tbody>
+                        <tr class="border-t border-[var(--border-color)]"><td class="p-3">cookie_consent, lang, theme</td><td class="p-3">Acest site (localStorage)</td><td class="p-3">Reține alegerea cookie, limba și tema</td><td class="p-3">Până la ștergere (alegerea cookie: 6 luni)</td><td class="p-3">Strict necesar</td></tr>
+                        <tr class="border-t border-[var(--border-color)]"><td class="p-3">_ga, _ga_8RWGLY5D6P</td><td class="p-3">Google Analytics</td><td class="p-3">Statistici anonimizate despre utilizarea site-ului</td><td class="p-3">până la 2 ani</td><td class="p-3">Analiză (cu acord)</td></tr>
+                    </tbody>
+                </table></div>
+                <p>Retragerea acordului oprește măsurarea și șterge cookie-urile Google Analytics setate de acest site. Pentru detalii despre datele personale, consultați <a class="underline text-[var(--accent-blue)]" href="/privacy/">Politica de confidențialitate</a>.</p>
+            </div>
+            <div class="l-en space-y-5">
+                <h1 class="text-3xl md:text-4xl font-extrabold">Cookie Policy</h1>
+                <p class="text-sm text-[var(--text-secondary)]">Last updated: 9 November 2026</p>
+                <p>We use local storage technologies in line with Romanian Law no. 506/2004 and the GDPR. Cookies that are not strictly necessary are enabled only after you consent. You can change your choice at any time via <a href="#" data-cookie-settings class="underline text-[var(--accent-blue)]">Cookie settings</a>.</p>
+                <div class="overflow-x-auto"><table class="w-full text-sm border border-[var(--border-color)]">
+                    <thead class="bg-[var(--bg-secondary)]"><tr><th class="p-3 text-left">Name</th><th class="p-3 text-left">Provider</th><th class="p-3 text-left">Purpose</th><th class="p-3 text-left">Duration</th><th class="p-3 text-left">Type</th></tr></thead>
+                    <tbody>
+                        <tr class="border-t border-[var(--border-color)]"><td class="p-3">cookie_consent, lang, theme</td><td class="p-3">This site (localStorage)</td><td class="p-3">Remembers cookie choice, language and theme</td><td class="p-3">Until cleared (cookie choice: 6 months)</td><td class="p-3">Strictly necessary</td></tr>
+                        <tr class="border-t border-[var(--border-color)]"><td class="p-3">_ga, _ga_8RWGLY5D6P</td><td class="p-3">Google Analytics</td><td class="p-3">Anonymised statistics about site usage</td><td class="p-3">up to 2 years</td><td class="p-3">Analytics (consent)</td></tr>
+                    </tbody>
+                </table></div>
+                <p>Withdrawing consent stops measurement and deletes the Google Analytics cookies set by this site. For personal data details see our <a class="underline text-[var(--accent-blue)]" href="/privacy/">Privacy Policy</a>.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-[var(--bg-secondary)] py-12 border-t border-[var(--border-color)]">
+        <div class="container mx-auto px-4 text-center text-[var(--text-secondary)]">
+            <div class="legal-links flex flex-wrap justify-center gap-x-5 gap-y-2 mb-4 text-xs">
+                <a href="/privacy/"><span class="l-ro">Politica de confidențialitate</span><span class="l-en">Privacy Policy</span></a>
+                <a href="/cookies/"><span class="l-ro">Politica de cookie-uri</span><span class="l-en">Cookie Policy</span></a>
+                <a href="#" data-cookie-settings><span class="l-ro">Setări cookie</span><span class="l-en">Cookie settings</span></a>
+                <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener noreferrer">ANPC - SAL</a>
+                <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">SOL</a>
+            </div>
+            <p>&copy; 2026 Frigorificos Daniel. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+</html>

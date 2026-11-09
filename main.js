@@ -594,3 +594,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
+/**
+ * GA4 custom event tracking (delegated; no-op if gtag is blocked)
+ */
+document.addEventListener('click', e => {
+  const a = e.target.closest && e.target.closest('a[href]');
+  if (!a || typeof window.gtag !== 'function') return;
+  const href = a.getAttribute('href') || '';
+  if (href.startsWith('tel:')) {
+    gtag('event', 'click_phone', { event_category: 'Contact' });
+  } else if (href.includes('/frigo-carrier')) {
+    gtag('event', 'view_carrier_services');
+  } else if (href.includes('/certificat-FRC')) {
+    gtag('event', 'view_frc_services');
+  }
+});

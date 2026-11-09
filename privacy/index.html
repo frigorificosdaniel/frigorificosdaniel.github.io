@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ro" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Politica de confidențialitate și prelucrarea datelor cu caracter personal - Frigorificos Daniel SRL." />
+    <title>Politica de confidențialitate | Frigorificos Daniel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--accent-blue)',
+                        'primary-hover': 'var(--accent-blue-hover)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/images/icon.png">
+    <meta name="google-site-verification" content="41uS2jlHzJidQans4Os842CnkwK2XTR9i0KvKqMC75k" />
+    <script src="/consent.js" defer></script>
+    <link rel="canonical" href="https://frigorificosdaniel.com/privacy/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frigorificosdaniel.com/privacy/" />
+    <meta property="og:title" content="Politica de confidențialitate | Frigorificos Daniel" />
+    <meta property="og:description" content="Politica de confidențialitate și prelucrarea datelor cu caracter personal - Frigorificos Daniel SRL." />
+    <meta property="og:image" content="https://frigorificosdaniel.com/assets/images/carrier-1.jpg" />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Politica de confidențialitate | Frigorificos Daniel" />
+    <meta name="twitter:description" content="Politica de confidențialitate și prelucrarea datelor cu caracter personal - Frigorificos Daniel SRL." />
+    <meta name="twitter:image" content="https://frigorificosdaniel.com/assets/images/carrier-1.jpg" />
+    <meta name="robots" content="index, follow" />
+</head>
+<body class="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Header/Nav -->
+    <header class="sticky top-0 z-50 w-full bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--border-color)]">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="../" class="flex items-center gap-2">
+                    <img src="../assets/images/icon.png" alt="Frigorificos Daniel" class="h-14 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-[var(--accent-blue)]">FRIGORIFICOS <span class="text-[var(--text-primary)]">DANIEL</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                    <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                    <a href="../transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                    <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                    <a href="../services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                    <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                    <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 text-sm font-medium">
+                        <button class="lang-btn" data-lang="ro">RO</button>
+                        <span class="text-[var(--border-color)]">|</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-[var(--bg-secondary)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-[var(--bg-secondary)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)] p-4 space-y-4">
+            <nav class="flex flex-col gap-4">
+                <a href="../" data-i18n="nav.home" class="nav-link">Acasă</a>
+                <a href="../routes/" data-i18n="nav.routes" class="nav-link">Rute</a>
+                <a href="../transport/" data-i18n="nav.transport" class="nav-link">Transport</a>
+                <a href="../logistics/" data-i18n="nav.logistics" class="nav-link">Logistică</a>
+                <a href="../services/" data-i18n="nav.services" class="nav-link">Servicii</a>
+                <a href="../gallery/" data-i18n="nav.gallery" class="nav-link">Galerie</a>
+                <a href="../contact/" data-i18n="nav.contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-grow">
+        <article class="container mx-auto px-4 py-16 max-w-3xl space-y-6 leading-relaxed">
+            <div class="l-ro space-y-5">
+                <h1 class="text-3xl md:text-4xl font-extrabold">Politica de confidențialitate</h1>
+                <p class="text-sm text-[var(--text-secondary)]">Ultima actualizare: 9 noiembrie 2026</p>
+                <h2 class="text-xl font-bold pt-2">1. Operatorul de date</h2>
+                <p>FRIGORIFICOS DANIEL SRL, cu sediul în Calea Dejului nr. 1, Viișoara, județul Bistrița-Năsăud, România. Email: <a class="underline text-[var(--accent-blue)]" href="mailto:contact@frigorificosdaniel.com">contact@frigorificosdaniel.com</a>, telefon: <a class="underline text-[var(--accent-blue)]" href="tel:+40740559553">+40 740 559 553</a>.</p>
+                <h2 class="text-xl font-bold pt-2">2. Ce date prelucrăm și de ce</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Formularul de contact</strong> (nume, prenume, email, telefon, mesaj): pentru a răspunde solicitărilor de ofertă sau programare. Temei legal: măsuri precontractuale la cererea dumneavoastră și interesul nostru legitim de a răspunde (art. 6 alin. 1 lit. b și f din GDPR). Păstrăm datele cât este necesar pentru soluționarea solicitării și, ulterior, cel mult 3 ani (termenul general de prescripție), dacă relația comercială o impune.</li>
+                    <li><strong>Statistici de utilizare (Google Analytics 4)</strong>: doar dacă acceptați cookie-urile de analiză. Temei legal: consimțământul (art. 6 alin. 1 lit. a). Datele sunt agregate; adresa IP este anonimizată. Nu folosim cookie-uri de publicitate.</li>
+                    <li><strong>Preferințe locale</strong> (limbă, temă, alegerea privind cookie-urile): stocate în browserul dvs. și necesare funcționării site-ului; nu sunt transmise către noi.</li>
+                    <li><strong>Jurnale tehnice</strong> (adresă IP, tip browser) prelucrate de furnizorul de găzduire pentru securitate și funcționare.</li>
+                </ul>
+                <h2 class="text-xl font-bold pt-2">3. Destinatari și transferuri</h2>
+                <p>Folosim furnizori care prelucrează date în numele nostru sau furnizează resurse site-ului: Web3Forms (transmiterea formularului de contact către email), GitHub Pages / GitHub, Inc. (găzduire), Google LLC (Google Analytics - doar cu acord; Google Fonts) și Tailwind CSS CDN. Unii pot fi situați în afara Spațiului Economic European, caz în care transferul se bazează pe garanții adecvate (de exemplu, Data Privacy Framework sau clauze contractuale standard). Nu vindem datele dumneavoastră.</p>
+                <h2 class="text-xl font-bold pt-2">4. Drepturile dumneavoastră</h2>
+                <p>Aveți dreptul de acces, rectificare, ștergere, restricționarea prelucrării, portabilitate și opoziție, precum și dreptul de a vă retrage consimțământul oricând (din „Setări cookie”, în subsolul site-ului), fără a afecta legalitatea prelucrării anterioare. Ne puteți scrie la adresa de email de mai sus; răspundem în cel mult 30 de zile.</p>
+                <p>Aveți dreptul de a depune plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), B-dul G-ral. Gheorghe Magheru nr. 28-30, Sector 1, București, <a class="underline text-[var(--accent-blue)]" href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer">www.dataprotection.ro</a>.</p>
+                <h2 class="text-xl font-bold pt-2">5. Cookie-uri</h2>
+                <p>Detalii în <a class="underline text-[var(--accent-blue)]" href="/cookies/">Politica de cookie-uri</a>.</p>
+            </div>
+            <div class="l-en space-y-5">
+                <h1 class="text-3xl md:text-4xl font-extrabold">Privacy Policy</h1>
+                <p class="text-sm text-[var(--text-secondary)]">Last updated: 9 November 2026</p>
+                <h2 class="text-xl font-bold pt-2">1. Data controller</h2>
+                <p>FRIGORIFICOS DANIEL SRL, registered office at Calea Dejului no. 1, Viișoara, Bistrița-Năsăud County, Romania. Email: <a class="underline text-[var(--accent-blue)]" href="mailto:contact@frigorificosdaniel.com">contact@frigorificosdaniel.com</a>, phone: <a class="underline text-[var(--accent-blue)]" href="tel:+40740559553">+40 740 559 553</a>.</p>
+                <h2 class="text-xl font-bold pt-2">2. What we process and why</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Contact form</strong> (first/last name, email, phone, message): to answer quote or appointment requests. Legal basis: steps prior to a contract at your request and our legitimate interest in replying (Art. 6(1)(b) and (f) GDPR). We keep the data as long as needed to handle your request and afterwards for no more than 3 years (general limitation period) where a business relationship requires it.</li>
+                    <li><strong>Usage statistics (Google Analytics 4)</strong>: only if you accept analytics cookies. Legal basis: consent (Art. 6(1)(a)). Data is aggregated and IP addresses are anonymised. We do not use advertising cookies.</li>
+                    <li><strong>Local preferences</strong> (language, theme, cookie choice): stored in your browser and needed for the site to work; not sent to us.</li>
+                    <li><strong>Technical logs</strong> (IP address, browser type) processed by our hosting provider for security and operation.</li>
+                </ul>
+                <h2 class="text-xl font-bold pt-2">3. Recipients and transfers</h2>
+                <p>We use providers that process data on our behalf or deliver site resources: Web3Forms (delivering contact-form messages by email), GitHub Pages / GitHub, Inc. (hosting), Google LLC (Google Analytics - only with consent; Google Fonts) and the Tailwind CSS CDN. Some may be located outside the European Economic Area, in which case transfers rely on appropriate safeguards (e.g. the Data Privacy Framework or standard contractual clauses). We do not sell your data.</p>
+                <h2 class="text-xl font-bold pt-2">4. Your rights</h2>
+                <p>You have the right of access, rectification, erasure, restriction, portability and objection, and the right to withdraw consent at any time (via "Cookie settings" in the site footer) without affecting prior processing. Write to us at the email above; we reply within 30 days.</p>
+                <p>You may lodge a complaint with the Romanian data protection authority (ANSPDCP), B-dul G-ral. Gheorghe Magheru 28-30, Sector 1, Bucharest, <a class="underline text-[var(--accent-blue)]" href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer">www.dataprotection.ro</a>.</p>
+                <h2 class="text-xl font-bold pt-2">5. Cookies</h2>
+                <p>See our <a class="underline text-[var(--accent-blue)]" href="/cookies/">Cookie Policy</a>.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-[var(--bg-secondary)] py-12 border-t border-[var(--border-color)]">
+        <div class="container mx-auto px-4 text-center text-[var(--text-secondary)]">
+            <div class="legal-links flex flex-wrap justify-center gap-x-5 gap-y-2 mb-4 text-xs">
+                <a href="/privacy/"><span class="l-ro">Politica de confidențialitate</span><span class="l-en">Privacy Policy</span></a>
+                <a href="/cookies/"><span class="l-ro">Politica de cookie-uri</span><span class="l-en">Cookie Policy</span></a>
+                <a href="#" data-cookie-settings><span class="l-ro">Setări cookie</span><span class="l-en">Cookie settings</span></a>
+                <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener noreferrer">ANPC - SAL</a>
+                <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">SOL</a>
+            </div>
+            <p>&copy; 2026 Frigorificos Daniel. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+</html>
